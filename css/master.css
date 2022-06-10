@@ -1,0 +1,109 @@
+/*
+ * Terra Più
+ * http://terra.catalyst-interactive.com
+ *
+ * Copyright 2011, Dominic Vogl
+ * Catalyst Interactive
+ * http://www.catalyst-interactive.com
+ * 
+ * Juni 2011
+ *	 Do we need to hack the position to make this site appear fixed?
+ *   We could hack this using CSS,
+ *   but let's just get over all the hacks and let IE6 users get what they deserve!
+ *   Down with hacks! Hmm...now that I think about it,
+ *   I should just flash all kinds of alerts and annoying popups on
+ *   their screens, and then redirect them to some foreign spyware site that
+ *   will upload a nasty virus...
+ */
+ 
+body{background:url(../elemente/bg.jpg) top repeat;color:#282828;font-family:FontinSansCRRegular, Arial, Sans Serif;line-height:1.35em}
+strong{font-family:FontinSansCRBold}
+i{font-family:FontinSansCRItalic}
+h1{font-family:FontinBold, Arial, Sans Serif;font-size:1.3em;line-height:1.15em;margin-bottom:16px}
+a,a:visited{color:#282828;text-decoration:none}
+a:hover{color:#466d24}
+p{margin-bottom:20px}
+a.mehr-button{background:url(../elemente/sprite.png) -6px -245px;display:block;height:37px;width:90px}
+a.mehr-button:hover{background-position:-108px -245px}
+@media screen and (min-width: 481px) {
+body{font-size:1.05em}
+div#motiv{background:url(../elemente/motiv.jpg) top no-repeat}
+#header-bg{background:url(../elemente/header_bg_repeat.png) repeat-x;height:195px;position:absolute;width:100%;z-index:10}
+#motiv{background:url(../elemente/motiv.jpg) no-repeat top;height:718px;overflow:hidden;position:absolute;width:100%;z-index:9}
+#main-wrapper{left:50%;margin-left:-580px;position:relative;width:1160px;z-index:20}
+#logo{left:-13px;position:absolute;top:40px}
+#logo a{background:url(../elemente/sprite.png) no-repeat -15px 0;display:block;height:230px;width:310px}
+#logo a:hover{background-position:-338px 0}
+div#header{background:url(../elemente/schatten_header.png) bottom no-repeat;height:196px;width:1160px}
+div#nav{height:25px;margin-left:404px;position:relative;top:130px;width:815px}
+div#nav ul li.mainnav{display:block;float:left;margin-left:25px}
+div#nav ul li.mainnav a{color:#fff;filter:dropshadow(color=#000000,offx=0,offy=1);text-decoration:none;text-shadow:0 1px 1px rgba(0,0,0,0.6)}
+div#nav ul li.mainnav > a{font-family:FontinSmallCaps;font-size:15pt}
+li div.sub_menu{background:rgba(93,141,37,0.8);box-shadow:0 2px 10px #000;display:none;left:86px;position:absolute;top:43px;z-index:10}
+li div.sub_menu li{display:list-item;float:none}
+li div.sub_menu li a{border-bottom:1px solid rgba(0,0,0,0.1);border-top:1px solid rgba(255,255,255,0.3);display:block;font-family:FontinSansCRRegular, Arial, Sans Serif;font-size:.95em;line-height:1.1em;margin:0 18px;padding:12px 0}
+li div.sub_menu li:first-child a{border-top:none;padding-top:20px}
+li div.sub_menu li:last-child a{border-bottom:none}
+.mobile-border{display:none}
+div#content{margin-top:130px;position:relative;width:100%}
+.wrapper-header{border-bottom:1px solid rgba(0,0,0,0.3);height:400px;overflow:hidden;padding-bottom:50px}
+.wrapper-area{border-bottom:1px solid rgba(0,0,0,0.3);border-top:1px solid rgba(255,255,255,0.5);overflow:hidden;padding:30px 0}
+.main-left{float:left;margin-right:50px;width:380px}
+.folge-left{float:left;margin-right:50px;width:460px}
+.slideshow{-moz-box-shadow:0 0 10px #000;-webkit-box-shadow:0 0 10px #000;background:url(../elemente/sprite.png) 0 -386px;box-shadow:0 0 5px #000;float:left;padding:15px;width:695px}
+.pic-show{float:right;width:650px}
+.pic-show div{-moz-box-shadow:0 0 10px #000;-webkit-box-shadow:0 0 10px #000;box-shadow:0 0 5px #000;position:absolute}
+.pic-show div.big-pic{border:12px solid #402900;right:0;z-index:10}
+.pic-show div.big-pic img{height:279px;width:440px}
+.pic-show div.small-pic{border:12px solid #402900;right:310px;top:170px;z-index:20}
+.pic-show div.small-pic img{height:177px;width:280px}
+div.spalten{float:left;margin-right:40px;width:259px}
+div.spalten a.pics img{-moz-box-shadow:0 1px 2px #000;-webkit-box-shadow:0 1px 2px #000;border:5px solid #8c7d61;box-shadow:0 1px 2px #000;height:157px;margin-bottom:30px;width:250px}
+div.spalten a.pics img:hover{border-color:#466d24}
+div.spalten:last-child{margin:0}
+.clear{clear:both}
+div#footer-sign{background:url(../elemente/ornament.png) bottom no-repeat;border-top:1px solid rgba(255,255,255,0.5);height:137px;padding-top:50px;width:100%}
+div#footer{background:url(../elemente/footer_wrapper.png);height:225px;margin-top:-12px;width:100%}
+div.catalyst{color:#99a988;font-size:.9em;margin:auto;overflow:hidden;padding-top:40px;text-shadow:-1px -1px 1px rgba(0,0,0,0.3);width:1160px}
+.footer-nav{float:left;margin-top:24px;overflow:hidden}
+.footer-nav ul li{display:block;float:left;margin-right:7px;text-transform:uppercase}
+.footer-nav ul li a{color:#d2d2d2}
+.footer-c{float:right;margin:24px 25px 0 0}
+.footer-logo{float:right}
+div.catalyst a,div.catalyst span{color:#d2ddc7}
+div.catalyst a.ci{background:url(../elemente/sprite.png) -257px -250px;display:block;height:55px;width:250px}
+div.catalyst a.ci:hover{background-position:-522px -250px}
+div#nav ul li a:hover,div.catalyst a:hover{color:#e1d5bb}
+.pic-show div.big-pic:hover,.pic-show div.small-pic:hover{border-color:#5f8731}
+}
+@media screen and (max-width: 480px) {
+#header-bg{background:url(../elemente/header_bg_repeat_mobile.png) repeat-x;height:110px;width:100%}
+#main-wrapper{border-bottom:1px solid rgba(0,0,0,0.2);padding:20px;width:280px}
+a,a:visited{color:#466d24;text-decoration:none}
+a:hover{color:#282828}
+#logo{left:5px;position:absolute;top:5px}
+#logo a{background:url(../elemente/sprite_mobile.png) no-repeat 0 0;display:block;height:120px;width:160px}
+#logo a:hover{background-position:-160px 0}
+div#nav{margin-bottom:40px;overflow:hidden;width:280px}
+div#nav li,div#nav li.mobile-border,.mobile-border-bottom{display:block;float:left;margin-right:30px;width:125px}
+li.n-margin{margin:0!important}
+div#nav li.mobile-border{border-bottom:1px solid rgba(0,0,0,0.2)}
+div#nav li.mobile-border-bottom{border-top:1px solid rgba(255,255,255,0.3)}
+div#nav li a{border-bottom:1px solid rgba(0,0,0,0.2);border-top:1px solid rgba(255,255,255,0.3);display:block;padding:10px 0}
+.sub_menu{display:none}
+div#nav ul li.mainnav a{text-decoration:none}
+div#nav ul li.mainnav > a{font-family:FontinSmallCaps;font-size:1.1em}
+div.wrapper-header{margin-bottom:60px}
+div.spalten a.pics img{-webkit-box-shadow:0 1px 6px #000;border:5px solid #8c7d61;box-shadow:0 1px 6px #000;height:171px;margin-bottom:12px;width:270px}
+div.spalten{margin-bottom:40px}
+.pic-show div.big-pic,.pic-show div.small-pic{-webkit-box-shadow:0 1px 6px #000;border:5px solid #402900;box-shadow:0 1px 6px #000;margin-bottom:20px}
+.pic-show div.big-pic img,.pic-show div.small-pic img{height:171px;width:270px}
+h1{margin-bottom:5px}
+div.catalyst{background:url(../elemente/ornament_mobile.png) bottom no-repeat;border-top:1px solid rgba(255,255,255,0.3);height:120px;padding:20px;width:100%}
+.footer-nav{overflow:hidden}
+.footer-nav ul li{display:block;float:left;margin-right:7px;text-transform:uppercase}
+div.catalyst span{color:#466d24}
+.footer-c{font-size:.75em;line-height:1.1em;padding:10px 0}
+.slideshow,.footer-logo{display:none!important}
+.pic-show,#footer{width:280px}
+}

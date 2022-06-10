@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){var config={sensitivity:3,interval:100,over:fadeInSubMenu,timeout:300,out:fadeOutSubMenu};jQuery(".mainnav").hoverIntent(config)});function fadeInSubMenu(){var that=jQuery(this);that.children(".sub_menu").fadeIn('fast')}function fadeOutSubMenu(){var that=jQuery(this);that.children(".sub_menu").fadeOut('fast')}
